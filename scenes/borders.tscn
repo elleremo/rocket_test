@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 576, 24 )
+
+[sub_resource type="ProxyTexture" id=2]
+
+[node name="borders" type="StaticBody2D"]
+show_behind_parent = true
+scale = Vector2( 1.76, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -9.53674e-07, 7.62939e-06 )
+scale = Vector2( 1152, 48.0001 )
+texture = SubResource( 2 )
